@@ -26,6 +26,9 @@
               "apps/agro-fielding/src/assets"
             ],
             "styles": ["apps/agro-fielding/src/styles.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["apps/agro-fielding/src/assets/styles"]
+            },
             "scripts": []
           },
           "configurations": {

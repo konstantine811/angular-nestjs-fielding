@@ -1,8 +1,37 @@
-<div style="text-align: center;">
-  <h1>Welcome to agro-fielding!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-  />
+<div #mapViewNode class="esri-wrap"></div>
+<div id="esriWidgetGround">
+  <mat-checkbox
+    [checked]="true"
+    (change)="changeMapGround($event)"
+    class="mat-agro-fielding mat-checkbox--lg"
+  ></mat-checkbox>
 </div>
-<div>Message: {{ hello$ | async | json }}</div>
+<div id="drawWidgets">
+  <button
+    class="action-button esri-icon-labels"
+    (click)="drawSketch('point')"
+    type="button"
+    title="Add point to home widget"
+  ></button>
+</div>
+<div id="measureWidgets">
+  <button
+    class="action-button esri-icon-measure-line"
+    type="button"
+    (click)="measure('distance')"
+    title="Measure distance between two or more points"
+  ></button>
+  <button
+    class="action-button esri-icon-measure-area"
+    (click)="measure('area')"
+    type="button"
+    title="Measure area"
+  ></button>
+  <button
+    *ngIf="activeMeasureWidget"
+    class="action-button esri-icon-close"
+    (click)="destroyMeasureWidget()"
+    type="button"
+    title="Delete measure popup"
+  ></button>
+</div>

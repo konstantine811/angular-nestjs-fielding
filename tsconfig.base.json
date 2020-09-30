@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@agro-fielding/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@agro-fielding/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@agro-fieling/app/*": ["apps/agro-fielding/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

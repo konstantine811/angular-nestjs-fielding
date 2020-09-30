@@ -1,0 +1,16 @@
+@import url('https://js.arcgis.com/4.16/esri/themes/dark/main.css');
+
+// common
+@import './variables';
+@import './mat-change-theme/index';
+
+.esri-view-root {
+  height: 100%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

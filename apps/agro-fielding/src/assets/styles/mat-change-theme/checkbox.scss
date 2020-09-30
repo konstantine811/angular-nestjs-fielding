@@ -1,0 +1,8 @@
+.mat-agro-fielding {
+  &.mat-checkbox--lg {
+    .mat-checkbox-inner-container {
+      height: $mat-checkbox--width-lg;
+      width: $mat-checkbox--width-lg;
+    }
+  }
+}
